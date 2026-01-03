@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body.defaultcolor {
+  background: #f4f4f4;
+}
+
+body.transition1 {
+  background: linear-gradient(to top, #f4f4f4 0%, #67a5d2 20%);
+}
+
+body.troposphere {
+  background: #67a5d2;
+}
+
+body.transition2 {
+  background: linear-gradient(to top, #67a5d2, #0a72b4);
+}
+
+body.stratosphere {
+  background: #0a72b4;
+}
+
+body.transition3 {
+  background: linear-gradient(to top, #0a72b4, #05304d);
+}
+
+body.mesosphere {
+  background: #05304d;
+}
+
+body.transition4 {
+  background: linear-gradient(to top, #05304d, #000a18);
+}
+
+body.dark {
+  background: #000a18;
+}
+
+body.aurora {
+  background: url(assets/stars.gif);
+  background-size: cover;
+  background-color: #000a18;
+}
+
+body.starrynight {
+  background: url(assets/stars.gif);
+  background-blend-mode: soft-light;
+  background-size: contain;
+  background-color: #000a18;
+}
+
+body.ozoneclouds {
+  background: url(assets/nacreousclouds1536x1536.jpg);
+  background-size: cover;
+}
+
+body.lightclouds {
+  background: url(assets/nacreousclouds3.png);
+  background-blend-mode: hard-light;
+  background-size: cover;
+}
+
+body.meteor {
+  background: url(assets/meteor3.gif);
+  background-size: cover;
+}
+
+header {
+  padding: 20px;
+  background: #333;
+  color: white;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.distance-marker {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10vw;
+  max-width: 260px;
+  height: 2vh;
+  border-radius: 5px;
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  opacity: 0.7;
+  transform: translate(-300%, -50%);
+  z-index: 1001;
+}
+
+.distance-marker a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+.timeline-spine {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100vh;
+  background: transparent;
+  opacity: 0.1;
+  z-index: 998;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline-point {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  background: #f4f4f4;
+  border: solid 8px #000;
+  border-radius: 50%;
+  opacity: 0.7;
+  z-index: 999;
+}
+
+.timeline-box {
+  position: absolute;
+  width: 40vw;
+  max-width: 260px;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.timeline-box img {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  margin: 0.5rem auto 0;
+}
+
+.timeline-box.left {
+  right: 50%;
+  margin-right: 5vw;
+}
+
+.timeline-box.right {
+  left: 50%;
+  margin-left: 5vw;
+}
+
+.timeline-box.is-visible {
+  opacity: 0.99;
+  transform: translateY(-45%);
+}
+
+.timeline-box.is-visible:hover {
+  border: solid 2px #f4f4f4;
+}
+
+.section {
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: left;
+  color: white;
+  font-size: 6rem;
+}
+
+.cursor-container {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  transform: translate(-50%, 36%);
+}
+
+.cursor {
+  font-size: 32px;
+}
+
+.top-section {
+  background-color: transparent;
+  justify-content: center;
+  height: 10vh;
+  padding: 0;
+  font-family: "VT323", monospace;
+}
+
+.middle-section {
+  height: 65vh;
+  font-size: 1rem;
+}
+
+.middle-section div {
+  margin: 0 auto;
+}
+
+.middle-section a {
+  text-decoration: none;
+  font: 2rem sans-serif;
+  color: #222;
+}
+
+.bottom-section {
+  background-color: transparent;
+  justify-content: center;
+  height: 10vh;
+  padding: 0;
+  font-family: "Rubik Dirt", monospace;
+}
+
+@media (max-width: 768px) {
+  .timeline-box.left,
+  .timeline-box.right {
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+}
