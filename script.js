@@ -145,8 +145,6 @@ window.addEventListener("scroll", () => {
   } else {
     document.body.classList.add("defaultcolor");
   }
-
-  console.log(distanceFromTop);
 });
 
 function linearInterpolation(current, target, factor) {
