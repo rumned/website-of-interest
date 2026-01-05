@@ -79,6 +79,10 @@ header {
   top: 0;
 }
 
+#landing-page {
+  font-family: "Press Start 2P", sans-serif;
+}
+
 .distance-marker {
   position: absolute;
   left: 50%;
@@ -90,7 +94,7 @@ header {
   font-family: "Press Start 2P", sans-serif;
   font-weight: 400;
   color: #ffffff;
-  text-shadow: 2px 4px 0 #222;
+  text-shadow: 2px 4px 4px #222;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -101,7 +105,7 @@ header {
 }
 
 .distance-marker a {
-  text-decoration-style:dotted;
+  text-decoration-style: dotted;
   color: #ffffff;
 }
 
@@ -227,7 +231,7 @@ header {
   justify-content: center;
   height: 10vh;
   padding: 0;
-  font-family: "Rubik Dirt", monospace;
+  font-family: "Press Start 2P", monospace;
 }
 
 @media (max-width: 768px) {

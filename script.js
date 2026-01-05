@@ -65,7 +65,7 @@ const timelineObserverCallback = (entries) => {
 const timelineObserverOptions = {
   root: null, // use the viewport as the root
   rootMargin: "0px",
-  threshold: 0.2,
+  threshold: 0.7,
 };
 
 const observer = new IntersectionObserver(
